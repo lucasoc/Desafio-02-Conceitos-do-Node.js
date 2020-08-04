@@ -58,7 +58,7 @@ app.delete("/repositories/:id", (request, response) => {
 
   if(repositoryIndex < 0){
     return response.status(400).json({error: "Invalid repository ID."})
-  }
+  };
 
   repositories.splice(repositoryIndex, 1);
 
